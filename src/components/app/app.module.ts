@@ -24,7 +24,7 @@ import { DutyModule } from '../duty/duty.module';
       serveRoot: '/img',
     }),
     ServeStaticModule.forRoot({
-      rootPath: join(__dirname, '../../..', 'client/dist'),
+      rootPath: join(__dirname, '../../..', 'client'),
       exclude: ['/api/(.*)'],
     }),
     CoreModule,
